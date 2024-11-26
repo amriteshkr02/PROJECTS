@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="7346173.png">
+    <script src="script.js"></script>
+</head>
+    <header>
+        <h1><u><b>Student Registration System</b></u></h1>
+        <p>Register, Edit, And Manage Student Details Efficiently</p>
+    </header>
+    <body>
+        <section>
+            <form id="registrationForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                <label for="studentId">Student ID:</label>
+                <input type="number" id="studentId" name="studentId" required>
+                <label for="emailId">Email ID:</label>
+                <input type="email" id="emailId" name="emailId" required>
+                <label for="contactNo">Contact No.:</label>
+                <input type="text" id="contactNo" name="contactNo" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+            <section>
+                <form id="registrationForm">
+                    <!-- Input fields here -->
+                </form>
+                <div id="studentRecords">
+                    <h2>Registered Students</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Contact No.</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Student records will be added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <style>
+                body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4285F4;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #4285F4;
+    color: white;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #357ae8;
+}
+
+#studentRecords {
+    padding: 2em;
+    background-color: white;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#studentRecords table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#studentRecords th, #studentRecords td {
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+#studentRecords th {
+    background-color: #f4f4f4;
+}
+            </style>
+    </body>
+</html>
